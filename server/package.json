@@ -1,0 +1,25 @@
+{
+  "name": "Open-Trip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:prod": "npm run build && node dist/index.js",
+    "build": "rimraf ./dist && tsc"
+  },
+  "author": "Orel Moshe",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@types/express": "^4.17.3",
+    "@types/request-promise": "^4.1.46",
+    "@types/request-promise-native": "^1.0.17",
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-cache": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "promise.allsettled": "^1.0.2"
+  }
+}
